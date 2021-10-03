@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import { white } from "../utils/colors";
 import TextButton from "./TextButton";
-import { setLocalNotification, clearLocalNotification } from "./utils/helpers";
+import { setLocalNotification, clearLocalNotification } from "../utils/helpers";
 
 class StartQuiz extends Component {
   state = {
