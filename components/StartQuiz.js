@@ -39,7 +39,7 @@ class StartQuiz extends Component {
 
     this.setState((prev) => ({
       correct:
-        deck.questions[questionId].answer === answer
+        answer === "correct"
           ? prev.correct + 1
           : prev.correct,
       isDone: deck.questions.length === questionId + 1,
@@ -179,7 +179,7 @@ class StartQuiz extends Component {
               marginBottom: 10
             }}
             style={{ color: "#fff", padding: 10 }}
-            onPress={() => this.answerHandler("yes")}
+            onPress={() => this.answerHandler("correct")}
           >
             Correct
           </TextButton>
@@ -196,7 +196,7 @@ class StartQuiz extends Component {
               marginBottom: 10
             }}
             style={{ color: "#fff", padding: 10 }}
-            onPress={() => this.answerHandler("no")}
+            onPress={() => this.answerHandler("incorrect")}
           >
             Correct
           </TextButton>
