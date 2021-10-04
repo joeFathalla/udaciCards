@@ -198,7 +198,7 @@ class StartQuiz extends Component {
             style={{ color: "#fff", padding: 10 }}
             onPress={() => this.answerHandler("incorrect")}
           >
-            Correct
+            Incorrect
           </TextButton>
         </View>
       </View>
